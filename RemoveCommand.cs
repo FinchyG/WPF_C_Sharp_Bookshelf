@@ -9,13 +9,13 @@ namespace Bookshelf
     {
         public bool CanExecute(object parameter)
         {
-            var nameList = parameter as NameList;
+            var nameList = parameter as BookList;
             return nameList != null && nameList.SelectedName != null;
         }
 
         public void Execute(object parameter)
         {
-            var nameList = parameter as NameList;
+            var nameList = parameter as BookList;
             var oldName = nameList.SelectedName;
             nameList.Names.Remove(oldName);
         }

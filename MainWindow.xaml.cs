@@ -18,7 +18,7 @@ namespace Bookshelf
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new NameList();
+            DataContext = new BookList();
         }
     }
 }

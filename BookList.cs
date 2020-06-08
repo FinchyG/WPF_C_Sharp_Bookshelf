@@ -6,13 +6,13 @@ using System.Text;
 
 namespace Bookshelf
 {
-    public class NameList : INotifyPropertyChanged
+    public class BookList : INotifyPropertyChanged
     {
         string _title = "";
         string _author = "";
         string _selectedName;
 
-        public NameList()
+        public BookList()
         {
             Names = new ObservableCollection<string>();
         }
