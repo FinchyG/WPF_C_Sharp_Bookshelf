@@ -8,8 +8,8 @@ namespace Bookshelf
 {
     public class NameList : INotifyPropertyChanged
     {
-        string _Title = "";
-        string _lastName = "";
+        string _title = "";
+        string _author = "";
         string _selectedName;
 
         public NameList()
@@ -19,26 +19,26 @@ namespace Bookshelf
 
         public string Title
         {
-            get { return _Title; }
+            get { return _title; }
             set
             {
-                if (_Title != value)
+                if (_title != value)
                 {
-                    _Title = value;
-                    OnPropertyChanged("FirstName");
+                    _title = value;
+                    OnPropertyChanged("Title");
                 }
             }
         }
 
-        public string LastName
+        public string Author
         {
-            get { return _lastName; }
+            get { return _author; }
             set
             {
-                if (_lastName != value)
+                if (_author != value)
                 {
-                    _lastName = value;
-                    OnPropertyChanged("LastName");
+                    _author = value;
+                    OnPropertyChanged("Author");
                 }
             }
         }

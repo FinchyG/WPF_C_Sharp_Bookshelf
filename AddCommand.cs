@@ -10,9 +10,9 @@ namespace Bookshelf
         public void Execute(object parameter)
         {
             var nameList = parameter as NameList;
-            var newName = string.Format("{0} {1}", nameList.Title, nameList.LastName);
+            var newName = string.Format("{0} {1}", nameList.Title, nameList.Author);
             nameList.Names.Add(newName);
-            nameList.Title = nameList.LastName = "";
+            nameList.Title = nameList.Author = "";
         }
 
         public bool CanExecute(object parameter)
@@ -20,7 +20,7 @@ namespace Bookshelf
             var nameList = parameter as NameList;
             return nameList != null
                 && !string.IsNullOrWhiteSpace(nameList.Title)
-                && !string.IsNullOrWhiteSpace(nameList.LastName);
+                && !string.IsNullOrWhiteSpace(nameList.Author);
         }
 
         public event EventHandler CanExecuteChanged
