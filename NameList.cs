@@ -8,7 +8,7 @@ namespace Bookshelf
 {
     public class NameList : INotifyPropertyChanged
     {
-        string _firstName = "";
+        string _Title = "";
         string _lastName = "";
         string _selectedName;
 
@@ -17,14 +17,14 @@ namespace Bookshelf
             Names = new ObservableCollection<string>();
         }
 
-        public string FirstName
+        public string Title
         {
-            get { return _firstName; }
+            get { return _Title; }
             set
             {
-                if (_firstName != value)
+                if (_Title != value)
                 {
-                    _firstName = value;
+                    _Title = value;
                     OnPropertyChanged("FirstName");
                 }
             }

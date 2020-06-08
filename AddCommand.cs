@@ -10,16 +10,16 @@ namespace Bookshelf
         public void Execute(object parameter)
         {
             var nameList = parameter as NameList;
-            var newName = string.Format("{0} {1}", nameList.FirstName, nameList.LastName);
+            var newName = string.Format("{0} {1}", nameList.Title, nameList.LastName);
             nameList.Names.Add(newName);
-            nameList.FirstName = nameList.LastName = "";
+            nameList.Title = nameList.LastName = "";
         }
 
         public bool CanExecute(object parameter)
         {
             var nameList = parameter as NameList;
             return nameList != null
-                && !string.IsNullOrWhiteSpace(nameList.FirstName)
+                && !string.IsNullOrWhiteSpace(nameList.Title)
                 && !string.IsNullOrWhiteSpace(nameList.LastName);
         }
 

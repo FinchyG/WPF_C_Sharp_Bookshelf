@@ -31,9 +31,9 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label>First Name</Label>
+        <Label>Title</Label>
         <TextBox Grid.Column="1"
-                 Text="{Binding FirstName,UpdateSourceTrigger=PropertyChanged}" />
+                 Text="{Binding Title,UpdateSourceTrigger=PropertyChanged}" />
 
         <Label Grid.Row="1">Last Name</Label>
         <TextBox Grid.Column="1" Grid.Row="1"
