@@ -14,7 +14,7 @@ namespace Bookshelf
 
         public BookList()
         {
-            Names = new ObservableCollection<string>();
+            Books = new ObservableCollection<string>();
         }
 
         public string Title
@@ -56,7 +56,7 @@ namespace Bookshelf
             }
         }
 
-        public ObservableCollection<string> Names { get; private set; }
+        public ObservableCollection<string> Books { get; private set; }
 
         private void OnPropertyChanged(string property)
         {

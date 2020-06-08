@@ -46,7 +46,7 @@
         </StackPanel>
 
         <Label Grid.Row="3">Books</Label>
-        <ListBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding Names}"
+        <ListBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding Books}"
                     SelectedItem="{Binding SelectedBook}" Margin="5 0" Background="Azure"/>
 
     </Grid>

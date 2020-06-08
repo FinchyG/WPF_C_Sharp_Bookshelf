@@ -17,7 +17,7 @@ namespace Bookshelf
         {
             var nameList = parameter as BookList;
             var oldName = nameList.SelectedBook;
-            nameList.Names.Remove(oldName);
+            nameList.Books.Remove(oldName);
         }
 
         public event EventHandler CanExecuteChanged

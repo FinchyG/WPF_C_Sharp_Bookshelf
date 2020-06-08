@@ -11,16 +11,16 @@ namespace Bookshelf
         {
             var nameList = parameter as BookList;
             var newName = string.Format("{0} {1}", nameList.Title, nameList.Author);
-            nameList.Names.Add(newName);
+            nameList.Books.Add(newName);
             nameList.Title = nameList.Author = "";
         }
 
         public bool CanExecute(object parameter)
         {
-            var nameList = parameter as BookList;
-            return nameList != null
-                && !string.IsNullOrWhiteSpace(nameList.Title)
-                && !string.IsNullOrWhiteSpace(nameList.Author);
+            var bookList = parameter as BookList;
+            return bookList != null
+                && !string.IsNullOrWhiteSpace(bookList.Title)
+                && !string.IsNullOrWhiteSpace(bookList.Author);
         }
 
         public event EventHandler CanExecuteChanged
