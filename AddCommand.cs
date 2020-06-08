@@ -9,10 +9,10 @@ namespace Bookshelf
     {
         public void Execute(object parameter)
         {
-            var nameList = parameter as BookList;
-            var newName = string.Format("{0} {1}", nameList.Title, nameList.Author);
-            nameList.Books.Add(newName);
-            nameList.Title = nameList.Author = "";
+            var bookList = parameter as BookList;
+            var newBook = string.Format("{0} {1}", bookList.Title, bookList.Author);
+            bookList.Books.Add(newBook);
+            bookList.Title = bookList.Author = "";
         }
 
         public bool CanExecute(object parameter)

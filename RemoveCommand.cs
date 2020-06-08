@@ -15,9 +15,9 @@ namespace Bookshelf
 
         public void Execute(object parameter)
         {
-            var nameList = parameter as BookList;
-            var oldName = nameList.SelectedBook;
-            nameList.Books.Remove(oldName);
+            var bookList = parameter as BookList;
+            var oldBook = bookList.SelectedBook;
+            bookList.Books.Remove(oldBook);
         }
 
         public event EventHandler CanExecuteChanged
