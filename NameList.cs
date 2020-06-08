@@ -68,13 +68,6 @@ namespace Bookshelf
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        InfoCommand _infoCommand = new InfoCommand();
-
-        public InfoCommand InformationCommand
-        {
-            get { return _infoCommand; }
-        }
-
         AddCommand _addNameCommand = new AddCommand();
 
         public AddCommand AddNameCommand

@@ -49,6 +49,5 @@
         <ListBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding Names}"
                     SelectedItem="{Binding SelectedName}" Margin="5 0" Background="Azure"/>
 
-        <Button Grid.ColumnSpan="2" Grid.Row="4" Command="{Binding InformationCommand}">Info</Button>
     </Grid>
 </Window>
