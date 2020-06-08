@@ -9,14 +9,14 @@ namespace Bookshelf
     {
         public bool CanExecute(object parameter)
         {
-            var nameList = parameter as BookList;
-            return nameList != null && nameList.SelectedName != null;
+            var bookList = parameter as BookList;
+            return bookList != null && bookList.SelectedBook != null;
         }
 
         public void Execute(object parameter)
         {
             var nameList = parameter as BookList;
-            var oldName = nameList.SelectedName;
+            var oldName = nameList.SelectedBook;
             nameList.Names.Remove(oldName);
         }
 

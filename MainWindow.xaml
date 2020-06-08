@@ -45,9 +45,9 @@
             <Button Command="{Binding RemoveNameCommand}" CommandParameter="{Binding .}">Remove</Button>
         </StackPanel>
 
-        <Label Grid.Row="3">Names</Label>
+        <Label Grid.Row="3">Books</Label>
         <ListBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding Names}"
-                    SelectedItem="{Binding SelectedName}" Margin="5 0" Background="Azure"/>
+                    SelectedItem="{Binding SelectedBook}" Margin="5 0" Background="Azure"/>
 
     </Grid>
 </Window>

@@ -10,7 +10,7 @@ namespace Bookshelf
     {
         string _title = "";
         string _author = "";
-        string _selectedName;
+        string _selectedBook;
 
         public BookList()
         {
@@ -43,15 +43,15 @@ namespace Bookshelf
             }
         }
 
-        public string SelectedName
+        public string SelectedBook
         {
-            get { return _selectedName; }
+            get { return _selectedBook; }
             set
             {
-                if (_selectedName != value)
+                if (_selectedBook != value)
                 {
-                    _selectedName = value;
-                    OnPropertyChanged("SelectedName");
+                    _selectedBook = value;
+                    OnPropertyChanged("SelectedBook");
                 }
             }
         }
