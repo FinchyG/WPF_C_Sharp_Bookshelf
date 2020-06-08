@@ -68,18 +68,18 @@ namespace Bookshelf
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        AddCommand _addNameCommand = new AddCommand();
+        AddCommand _addBookCommand = new AddCommand();
 
-        public AddCommand AddNameCommand
+        public AddCommand AddBookCommand
         {
-            get { return _addNameCommand; }
+            get { return _addBookCommand; }
         }
 
-        RemoveCommand _removeNameCommand = new RemoveCommand();
+        RemoveCommand _removeBookCommand = new RemoveCommand();
 
-        public RemoveCommand RemoveNameCommand
+        public RemoveCommand RemoveBookCommand
         {
-            get { return _removeNameCommand; }
+            get { return _removeBookCommand; }
         }
     }
 }

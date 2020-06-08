@@ -41,8 +41,8 @@
 
         <StackPanel Grid.ColumnSpan="2" Grid.Row="2" Orientation="Horizontal"
                     HorizontalAlignment="Right">
-            <Button Command="{Binding AddNameCommand}" CommandParameter="{Binding .}">Add</Button>
-            <Button Command="{Binding RemoveNameCommand}" CommandParameter="{Binding .}">Remove</Button>
+            <Button Command="{Binding AddBookCommand}" CommandParameter="{Binding .}">Add</Button>
+            <Button Command="{Binding RemoveBookCommand}" CommandParameter="{Binding .}">Remove</Button>
         </StackPanel>
 
         <Label Grid.Row="3">Books</Label>
