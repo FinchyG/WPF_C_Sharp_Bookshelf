@@ -10,7 +10,7 @@ namespace Bookshelf
         public void Execute(object parameter)
         {
             var bookList = parameter as BookList;
-            var newBook = string.Format("{0} {1}", bookList.Title, bookList.Author);
+            var newBook = string.Format("{0} by {1}", bookList.Title, bookList.Author);
             bookList.Books.Add(newBook);
             bookList.Title = bookList.Author = "";
         }
